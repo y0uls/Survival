@@ -1,0 +1,22 @@
+version: "2.4"
+services:
+  server:
+    image: registry-dev.logitud.fr/administrateurs/survival:latest
+    container_name: survival_server
+    restart: always
+    ports:
+      - 8085:8085
+    volumes:
+      - ./received:/usr/src/app/received
+    command: ["node", "server.js"]
+
+  client:
+    image: registry-dev.logitud.fr/administrateurs/survival:latest
+    container_name: survival_client
+    restart: always
+    ports:
+      - 8085:8085
+    volumes:
+      - ./config.json:/usr/src/app/config.json
+      - ./send:/usr/src/app/send
+    command: ["node", "client.js"]

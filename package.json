@@ -1,0 +1,19 @@
+{
+  "name": "Survival",
+  "version": "1.0.0",
+  "description": "backup app",
+  "author": "Julien BOHLER",
+  "dependencies": {
+    "assert": "^1.0.2",
+    "colors": "^1.4.0",
+    "express": "^4.16.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.0",
+    "ip": "^1.1.5",
+    "local-ipv4-address": "0.0.2",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  }
+}
