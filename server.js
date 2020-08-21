@@ -6,7 +6,7 @@ var folder = "./received/";
 
 //DISABLE FOR THE MOMENT
 //const MongoClient = require('mongodb').MongoClient;
-//const url = 'mongodb://root:admin68@localhost:27017';
+//const url = 'mongodb://test:test@localhost:27017';
 //const dbName = 'backup';
 
 const fs = require('fs');
